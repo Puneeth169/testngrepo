@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="testSuite">
+<!--<test name="firstTest">
+		<classes>
+			<class name="com.selenium.testng.Login" />
+		</classes>
+	</test>-->
+	<!--<test name="secondTest">
+		<classes>
+			<class name="com.selenium.testng.Login2" />
+		</classes>
+	</test>-->
+	<!--<test name="firstTest">
+		<classes>
+			<class name="com.selenium.testng.DataProviderEx" />
+		</classes>
+	</test>-->
+	<test name="firstTest">
+	<parameters>
+		<parameter name="browser" value="chrome"/>
+	</parameters>
+		<classes>
+			<class name="com.selenium.grid.LoginTest" />
+		</classes>
+	</test>
+</suite>
+ 
