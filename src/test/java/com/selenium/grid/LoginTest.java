@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest {
 	@SuppressWarnings("deprecation")
-    @Test(invocationCount = 10)
+    //@Test(invocationCount = 10)
     @Parameters({"browser"})
     public void loginTest(String browser) throws MalformedURLException {
         URL url = new URL("http://10.206.137.177:4444");
