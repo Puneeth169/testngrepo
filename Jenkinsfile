@@ -1,18 +1,20 @@
-pipeline{
+pipeline {
 	agent any
-	stages{
-		stage("Build"){
-			steps{
+	stages {
+		stage("Build") {
+			steps {
 				sh "mvn compile"
 			}
 		}
-		stage("Test"){
-				wrap([$class: 'Xvfb']){
+		stage("Test") {
+			steps {
+				wrap([$class : 'Xvfb']) {
 					sh "mvn test"
 				}
+			}
 		}
-		stage("Publish"){
-			steps{
+		stage("Publish") {
+			steps {
 				testNG()
 			}
 		}
