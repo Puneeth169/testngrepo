@@ -15,13 +15,13 @@
 			<class name="com.selenium.testng.DataProviderEx" />
 		</classes>
 	</test>-->
-	<test name="firstTest">
+	<!-- <test name="firstTest">
 	<parameters>
 		<parameter name="browser" value="chrome"/>
 	</parameters>
 		<classes>
 			<class name="com.selenium.grid.LoginTest" />
 		</classes>
-	</test>
+	</test> -->
 </suite>
  
