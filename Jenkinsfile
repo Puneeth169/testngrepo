@@ -5,6 +5,7 @@ pipeline{
 			steps{
 				sh "mvn compile"
 			}
+		}
 		stage("Test"){
 				wrap([$class: 'Xvfb']){
 					sh "mvn test"
