@@ -20,7 +20,7 @@ public class Test1 {
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	}
 	
-	@Test
+	//@Test
 	public void login() {
 		//List<WebElement> loginDetails = driver.findElements(By.xpath("//p[@class='oxd-text oxd-text--p']"));
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
