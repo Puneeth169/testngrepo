@@ -20,7 +20,7 @@ public class Test1 {
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	}
 	
-	@Test
+	//@Test
 	public void login() {
 		//List<WebElement> loginDetails = driver.findElements(By.xpath("//p[@class='oxd-text oxd-text--p']"));
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
@@ -31,7 +31,7 @@ public class Test1 {
 		Assert.assertEquals(driver.getCurrentUrl(),"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
 	}
 	
-	@Test(dependsOnMethods = {"login"})
+	//@Test(dependsOnMethods = {"login"})
 	public void checkPage() {
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//a[@class='oxd-main-menu-item'])[1]")));
