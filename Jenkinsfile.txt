@@ -1,0 +1,19 @@
+pipeline{
+	agent:any
+	stages{
+		stage("Build"){
+			steps{
+				sh "mvn compile"
+			}
+		stage("Test"){
+				wrap([$class: 'Xvfb']){
+					sh "mvn test"
+				}
+		}
+		stage("Publish"){
+			steps{
+				testNG()
+			}
+		}
+	}
+}
